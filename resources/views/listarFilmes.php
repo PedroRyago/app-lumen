@@ -7,8 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 align="center">
-        <?="Hello, $name!";?>
-    </h1>
+    <ul>
+    <?php
+        foreach($filmes as $filme){
+            echo "<li>$filme->titulo</li>";
+        }
+    ?>
+    </ul>
 </body>
 </html>

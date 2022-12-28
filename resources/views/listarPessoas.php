@@ -7,8 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 align="center">
-        <?="Hello, $name!";?>
-    </h1>
+    <ul>
+    <?php
+        foreach($pessoas as $pessoa){
+            echo '<li>' . $pessoa->nome . '</li>';
+        }
+    ?>
+    </ul>
 </body>
 </html>
